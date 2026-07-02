@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-section .lead {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Card Styles */
+.note-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.note-card .card-header {
+    background: linear-gradient(135deg, #1a73e8, #1557b0);
+    color: white;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.note-card .card-body {
+    padding: 20px;
+}
+
+.note-card .badge {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+
+/* Star Rating Display */
+.star-rating-display {
+    font-size: 18px;
+}
+
+.star-rating-display .fa-star {
+    color: #ddd;
+    margin-right: 2px;
+}
+
+.star-rating-display .fa-star.active {
+    color: #ffc107;
+}
+
+/* File Type Badge */
+.file-type-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.file-type-pdf { background-color: #fce4ec; color: #c62828; }
+.file-type-docx { background-color: #e3f2fd; color: #1565c0; }
+.file-type-ppt { background-color: #fff3e0; color: #e65100; }
+
+/* Search Bar */
+.search-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.search-container .form-control {
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+.search-container .form-control:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.15);
+}
+
+/* Upload Form */
+.upload-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Auth Forms */
+.auth-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form .form-control {
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+}
+
+.auth-form .form-control:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.15);
+}
+
+/* Stats Cards */
+.stats-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stats-card .icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+/* Admin Table */
+.table-custom {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-custom thead {
+    background: linear-gradient(135deg, #1a73e8, #1557b0);
+    color: white;
+}
+
+.table-custom thead th {
+    padding: 15px;
+    font-weight: 600;
+    border: none;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+/* Download Count Badge */
+.download-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .upload-form,
+    .auth-form {
+        padding: 20px;
+    }
+    
+    .search-container {
+        padding: 15px;
+    }
+}

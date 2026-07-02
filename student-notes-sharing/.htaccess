@@ -1,0 +1,29 @@
+Options -Indexes
+RewriteEngine On
+
+# Prevent directory listing
+Options All -Indexes
+
+# Protect sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Protect includes directory
+RewriteRule ^includes/ - [F,L]
+
+# Protect config directory
+RewriteRule ^config/ - [F,L]
+
+# Error documents
+ErrorDocument 403 /error.php?code=403
+ErrorDocument 404 /error.php?code=404
+ErrorDocument 500 /error.php?code=500
+
+# PHP settings
+php_flag display_errors off
+php_value error_reporting E_ALL
+php_value upload_max_filesize 10M
+php_value post_max_size 12M
+php_value max_execution_time 300

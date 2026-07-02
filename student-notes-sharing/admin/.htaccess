@@ -1,0 +1,20 @@
+# Deny direct access to this directory
+Options -Indexes
+
+# Allow only authenticated users (additional security)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Check if user is logged in (PHP session)
+    RewriteCond %{HTTP_COOKIE} !PHPSESSID= [NC]
+    RewriteRule ^(.*)$ ../login.php [R=302,L]
+</IfModule>
+
+# Protect PHP files
+<FilesMatch "\.php$">
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+    Allow from ::1
+    Allow from localhost
+</FilesMatch>

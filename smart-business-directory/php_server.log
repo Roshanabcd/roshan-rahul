@@ -1,0 +1,75 @@
+[Wed Jul  1 06:50:07 2026] PHP 8.1.2-1ubuntu2.24 Development Server (http://localhost:8000) started
+[Wed Jul  1 06:50:21 2026] 127.0.0.1:58118 Accepted
+[Wed Jul  1 06:50:21 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:50:21 2026] 127.0.0.1:58118 [200]: GET /
+[Wed Jul  1 06:50:21 2026] 127.0.0.1:58118 Closing
+[Wed Jul  1 06:53:01 2026] 127.0.0.1:38030 Accepted
+[Wed Jul  1 06:53:01 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:53:01 2026] 127.0.0.1:38030 [200]: GET /
+[Wed Jul  1 06:53:01 2026] 127.0.0.1:38030 Closing
+[Wed Jul  1 06:53:03 2026] 127.0.0.1:38036 Accepted
+[Wed Jul  1 06:53:03 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:53:03 2026] 127.0.0.1:38036 [200]: GET /
+[Wed Jul  1 06:53:03 2026] 127.0.0.1:38036 Closing
+[Wed Jul  1 06:53:03 2026] 127.0.0.1:38734 Accepted
+[Wed Jul  1 06:53:03 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:53:03 2026] 127.0.0.1:38734 [200]: GET /
+[Wed Jul  1 06:53:03 2026] 127.0.0.1:38734 Closing
+[Wed Jul  1 06:53:03 2026] 127.0.0.1:38748 Accepted
+[Wed Jul  1 06:53:03 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:53:04 2026] 127.0.0.1:38748 [200]: GET /
+[Wed Jul  1 06:53:04 2026] 127.0.0.1:38748 Closing
+[Wed Jul  1 06:53:54 2026] 127.0.0.1:40026 Accepted
+[Wed Jul  1 06:53:54 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:53:54 2026] 127.0.0.1:40026 [200]: GET /
+[Wed Jul  1 06:53:54 2026] 127.0.0.1:40026 Closing
+[Wed Jul  1 06:55:52 2026] 127.0.0.1:60934 Accepted
+[Wed Jul  1 06:55:52 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:55:52 2026] 127.0.0.1:60934 [200]: GET /
+[Wed Jul  1 06:55:52 2026] 127.0.0.1:60934 Closing
+[Wed Jul  1 06:57:11 2026] 127.0.0.1:58510 Accepted
+[Wed Jul  1 06:57:11 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 06:57:11 2026] 127.0.0.1:58510 [200]: GET /
+[Wed Jul  1 06:57:11 2026] 127.0.0.1:58510 Closing
+[Wed Jul  1 07:23:05 2026] 127.0.0.1:34656 Accepted
+[Wed Jul  1 07:23:07 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 07:23:07 2026] 127.0.0.1:34656 [200]: GET /
+[Wed Jul  1 07:23:07 2026] 127.0.0.1:34656 Closing
+[Wed Jul  1 07:23:12 2026] 127.0.0.1:34660 Accepted
+[Wed Jul  1 07:23:12 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 07:23:12 2026] 127.0.0.1:34660 [200]: GET /
+[Wed Jul  1 07:23:12 2026] 127.0.0.1:34660 Closing
+[Wed Jul  1 07:24:30 2026] 127.0.0.1:49436 Accepted
+[Wed Jul  1 07:24:30 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 07:24:30 2026] 127.0.0.1:49436 [200]: HEAD /
+[Wed Jul  1 07:24:30 2026] 127.0.0.1:49436 Closing
+[Wed Jul  1 07:24:44 2026] 127.0.0.1:43080 Accepted
+[Wed Jul  1 07:24:44 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 07:24:44 2026] 127.0.0.1:43080 [200]: HEAD /index.php
+[Wed Jul  1 07:24:44 2026] 127.0.0.1:43080 Closing
+[Wed Jul  1 07:24:44 2026] 127.0.0.1:43084 Accepted
+[Wed Jul  1 07:24:44 2026] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'roshan'@'localhost' (using password: NO) in /var/www/html/smart-business-directory/test_db.php:1
+Stack trace:
+#0 /var/www/html/smart-business-directory/test_db.php(1): mysqli_connect()
+#1 {main}
+  thrown in /var/www/html/smart-business-directory/test_db.php on line 1
+[Wed Jul  1 07:24:44 2026] 127.0.0.1:43084 [500]: GET /test_db.php - Uncaught mysqli_sql_exception: Access denied for user 'roshan'@'localhost' (using password: NO) in /var/www/html/smart-business-directory/test_db.php:1
+Stack trace:
+#0 /var/www/html/smart-business-directory/test_db.php(1): mysqli_connect()
+#1 {main}
+  thrown in /var/www/html/smart-business-directory/test_db.php on line 1
+[Wed Jul  1 07:24:44 2026] 127.0.0.1:43084 Closing
+[Wed Jul  1 07:28:01 2026] 127.0.0.1:53054 Accepted
+[Wed Jul  1 07:28:01 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 07:28:01 2026] 127.0.0.1:53054 [200]: GET /
+[Wed Jul  1 07:28:01 2026] 127.0.0.1:53054 Closing
+[Wed Jul  1 07:28:01 2026] 127.0.0.1:53062 Accepted
+[Wed Jul  1 07:28:01 2026] 127.0.0.1:53062 [404]: GET /favicon.ico - No such file or directory
+[Wed Jul  1 07:28:01 2026] 127.0.0.1:53062 Closing
+[Wed Jul  1 07:31:49 2026] 127.0.0.1:53578 Accepted
+[Wed Jul  1 07:31:49 2026] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/smart-business-directory/includes/config.php on line 79
+[Wed Jul  1 07:31:49 2026] 127.0.0.1:53578 [200]: GET /smart-business-directory/
+[Wed Jul  1 07:31:49 2026] 127.0.0.1:53578 Closing
+[Wed Jul  1 08:08:43 2026] 127.0.0.1:51966 Accepted
+[Wed Jul  1 08:08:48 2026] 127.0.0.1:51966 Closed without sending a request; it was probably just an unused speculative preconnection
+[Wed Jul  1 08:08:48 2026] 127.0.0.1:51966 Closing

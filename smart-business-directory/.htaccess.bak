@@ -1,0 +1,56 @@
+RewriteEngine On
+RewriteBase /smart-business-directory/
+
+# Remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# SEO Friendly URLs for businesses
+RewriteRule ^business/([a-zA-Z0-9-]+)$ business-detail.php?slug=$1 [L,QSA]
+RewriteRule ^category/([a-zA-Z0-9-]+)$ businesses.php?category=$1 [L,QSA]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Redirect index to root
+RewriteCond %{THE_REQUEST} ^.*/index\.php
+RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Disable directory browsing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^(config|functions|auth|session)\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Compress files
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript
+</IfModule>
+
+# Cache static files
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

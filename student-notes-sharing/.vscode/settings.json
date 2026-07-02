@@ -1,0 +1,58 @@
+{
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    
+    "php.validate.executablePath": "C:/xampp/php/php.exe",
+    "php.suggest.basic": true,
+    "php.validate.enable": true,
+    
+    "intelephense.stubs": [
+        "apache",
+        "bcmath",
+        "core",
+        "curl",
+        "date",
+        "dom",
+        "fileinfo",
+        "filter",
+        "gd",
+        "hash",
+        "iconv",
+        "json",
+        "mbstring",
+        "mysql",
+        "mysqli",
+        "pcre",
+        "pdo",
+        "pgsql",
+        "phar",
+        "posix",
+        "readline",
+        "session",
+        "simplexml",
+        "standard",
+        "tokenizer",
+        "xml",
+        "xmlreader",
+        "xmlwriter",
+        "zip",
+        "zlib"
+    ],
+    
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+    
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true,
+        "**/uploads/**": true
+    }
+}
